@@ -4,6 +4,7 @@ import "github.com/Mt-Lampert/slick_anthGG/slick"
 
 // handles routing for the app
 func routes(app *slick.Slick) {
+	app.Get(`/`, HandleDashboard)
 	app.Get(`/profile`, HandleProfile)
 }
 

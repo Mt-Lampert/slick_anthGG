@@ -131,3 +131,4 @@ dist
 
 # templ output files
 views/profile/*_templ.go
+views/dashboard/*_templ.go
