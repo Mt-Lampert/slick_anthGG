@@ -9,7 +9,7 @@ import (
 func main() {
 	app := slick.New()
 
-	app.Get(`/profile`, HandleProfile)
+	routes(app)
 
 	fmt.Println(`Running Slick framework at port :3000`)
 	app.Start(`:3000`)
