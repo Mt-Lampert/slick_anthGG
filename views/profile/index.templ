@@ -1,7 +1,13 @@
 package profile
 
-templ Index() {
-<h1>This is the profile</h1>
+import "github.com/Mt-Lampert/slick_anthGG/model"
+
+templ Index(usr *model.User) {
+<h1>This is the profile for {usr.FirstName} {usr.LastName}</h1>
+
+<p>
+  <b>Email:</b> {usr.Email}
+</p>
 }
 
 // vim: ts=2 sw=2 fdm=indent
